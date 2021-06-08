@@ -1,0 +1,36 @@
+{
+  "name": "alexia-toulmet-s-personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ALexia Toulmet's personal website",
+  "author": "Alexia Toulmet",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^3.6.2",
+    "gatsby-plugin-emotion": "^6.7.0",
+    "gatsby-plugin-gatsby-cloud": "^2.7.0",
+    "gatsby-plugin-image": "^1.7.0",
+    "gatsby-plugin-mdx": "^2.7.0",
+    "gatsby-plugin-react-helmet": "^4.7.0",
+    "gatsby-plugin-sharp": "^3.7.0",
+    "gatsby-plugin-sitemap": "^4.3.0",
+    "gatsby-source-filesystem": "^3.7.0",
+    "gatsby-transformer-sharp": "^3.7.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  }
+}
