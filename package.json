@@ -2,7 +2,7 @@
   "name": "alexia-toulmet-s-personal-website",
   "version": "1.0.0",
   "private": true,
-  "description": "ALexia Toulmet's personal website",
+  "description": "Alexia Toulmet's personal website",
   "author": "Alexia Toulmet",
   "keywords": [
     "gatsby"
@@ -19,6 +19,8 @@
     "@emotion/styled": "^11.3.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
     "gatsby": "^3.6.2",
     "gatsby-plugin-emotion": "^6.7.0",
     "gatsby-plugin-gatsby-cloud": "^2.7.0",
@@ -28,6 +30,7 @@
     "gatsby-plugin-sharp": "^3.7.0",
     "gatsby-plugin-sitemap": "^4.3.0",
     "gatsby-source-filesystem": "^3.7.0",
+    "gatsby-transformer-remark": "^4.4.0",
     "gatsby-transformer-sharp": "^3.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
