@@ -1,7 +1,7 @@
-import React from 'react'
 import { graphql, Link } from 'gatsby'
+import { BlogProps } from '../types/blog'
 
-export default function Blog({ data }) {
+export default function Blog({ data }: BlogProps) {
     const { posts } = data.blog
 
     return (

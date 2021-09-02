@@ -1,6 +1,18 @@
 module.exports = {
     siteMetadata: {
         title: "Alexia Toulmet's personal website",
+        description: `Hi 👋! I am a fullstack software engineer. When I'm not creating new React components, I am teaching code.`,
+        keywords: 'frontend, code, teaching, software',
+        siteUrl: 'https://alexiatoulmet.com',
+        author: 'Alexia Toulmet',
+        authorDetails: {
+            name: 'Alexia Toulmet',
+            url: 'https://alexiatoulmet.com',
+            email: 'alexia.toulmet@gmail.com',
+        },
+        social: {
+            twitter: `https://twitter.com/atoulmet`,
+        },
     },
     plugins: [
         'gatsby-plugin-emotion',
@@ -12,6 +24,13 @@ module.exports = {
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [`Suez One`, `Noto Sans`],
+                display: 'swap',
+            },
+        },
         {
             resolve: 'gatsby-source-filesystem',
             options: {
