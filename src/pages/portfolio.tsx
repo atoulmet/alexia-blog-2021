@@ -1,5 +1,11 @@
+import { Layout, Card, CTASection, CTA } from '../components'
+
 function Portfolio() {
-    return <div>Portfolio page</div>
+    return (
+        <Layout>
+            <div>Portfolio page</div>
+        </Layout>
+    )
 }
 
 export default Portfolio

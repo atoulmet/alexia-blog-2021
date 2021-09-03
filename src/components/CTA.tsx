@@ -23,6 +23,7 @@ export default function CTA({ CTAlink, CTAlabel }: CTAProps) {
                         background-color: white;
                         font-family: ${theme.normalFont};
                         font-size: 24px;
+                        font-weight: 600;
                         padding: 15px 30px;
                         position: relative;
                         padding-bottom: 12px;
@@ -31,7 +32,7 @@ export default function CTA({ CTAlink, CTAlabel }: CTAProps) {
                             transform: translate(0px, 2px);
                             transition: 200ms;
                             &:after {
-                                transform: translate(-0px, -2px);
+                                transform: translate(-0px, -1px);
                                 transition: 200ms;
                             }
                         }

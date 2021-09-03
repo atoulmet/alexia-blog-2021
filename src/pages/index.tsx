@@ -18,10 +18,11 @@ const LanguagesMarquee = ({
 }) => (
     <Marquee gradient={false} speed={speed} pauseOnHover direction={direction}>
         <span>
-            React . Next . Gatsby. NodeJS . CSS . Redux . Express . Javascript .
-            Styled Components . Git . MongoDB . Sass . GraphQL . SQL . NestJS .
-            React . Next . Gatsby. NodeJS . CSS . Redux . Express . Javascript .
-            Styled Components . Git . MongoDB . Sass . GraphQL . SQL . NestJS
+            React · Next · Gatsby · NodeJS · CSS · Redux · Express · Javascript
+            · Styled Components · Git · MongoDB · Sass · GraphQL · SQL · NestJS
+            · React · Next · Gatsby · NodeJS · CSS · Redux · Express ·
+            Javascript · Styled Components · Git · MongoDB · Sass · GraphQL ·
+            SQL · NestJS ·
         </span>
     </Marquee>
 )
@@ -195,9 +196,9 @@ function HomeContent() {
             <CTASection
                 title="I collaborate with great companies"
                 CTAlink="/portfolio"
-                CTAlabel="See more of my projects"
+                CTAlabel="See more of my work"
             >
-                <Marquee gradient={false} direction="left">
+                <Marquee gradient={false} direction="left" pauseOnHover>
                     <div
                         css={css`
                             display: flex;
@@ -253,7 +254,7 @@ function HomeContent() {
                 <CTA CTAlink="/blog" CTAlabel="See my blog posts"></CTA>
             </div>
             <CTASection
-                title="And love having fun with code"
+                title="And love having fun with CSS"
                 CTAlink="/portfolio"
                 CTAlabel="See my portfolio"
             >
