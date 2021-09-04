@@ -160,7 +160,15 @@ function HomeContent() {
                         flex-direction: row;
                     `}
                 >
-                    <Card width={400}>
+                    <Card
+                        cssProps={css`
+                            padding: 60px 30px;
+                            width: 400px;
+                            &h3 {
+                                text-decoration: underline;
+                            }
+                        `}
+                    >
                         <Robot />
 
                         <h3
@@ -176,7 +184,15 @@ function HomeContent() {
                             dolore magna aliqua, Ut enim ad minim veniam
                         </p>
                     </Card>
-                    <Card width={400}>
+                    <Card
+                        cssProps={css`
+                            padding: 60px 30px;
+                            width: 400px;
+                            &h3 {
+                                text-decoration: underline;
+                            }
+                        `}
+                    >
                         <Terminal />
                         <h3
                             css={css`

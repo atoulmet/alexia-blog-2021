@@ -1,15 +1,18 @@
 import { graphql } from 'gatsby'
 import { BlogPostProps } from '../types/blog'
+import { Layout, Card, CTASection, CTA } from '../components'
 
 export default function BlogPost({ data }: BlogPostProps) {
     const post = data.markdownRemark
 
     return (
-        <div>
-            <h1>{post.frontmatter.title}</h1>
-            <small>{post.frontmatter.date}</small>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
+        <Layout>
+            <div>
+                <h1>{post.frontmatter.title}</h1>
+                <small>{post.frontmatter.date}</small>
+                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            </div>
+        </Layout>
     )
 }
 export const query = graphql`

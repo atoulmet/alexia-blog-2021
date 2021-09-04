@@ -36,6 +36,23 @@ export const highlightTextStyle = css`
     }
 `
 
+export const highlightTitleStyle = css`
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    text-shadow: none;
+    &:after {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 30px;
+        background-color: ${theme.primary};
+        z-index: -1;
+        transform: translateX(10px);
+    }
+`
+
 export const globalStyle = css`
     body {
         background-color: white;
