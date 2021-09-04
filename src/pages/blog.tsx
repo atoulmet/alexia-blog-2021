@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import { BlogProps } from '../types/blog'
 import { Layout } from '../components'
-import Badge from '../icons/Badge'
+import Badge from '../icons/badge'
 import { css, keyframes } from '@emotion/react'
 import BlogPostList from '../components/BlogPostList'
 
