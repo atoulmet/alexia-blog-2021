@@ -6,8 +6,9 @@ import XingFuCat from '../components/XingFuCat'
 import Robot from '../icons/robot'
 import Terminal from '../icons/terminal'
 import { ITheme, hideDotsStyle, highlightTextStyle } from '../style/theme'
-
-// interface IndexPageProps {}
+import { BlogProps } from '../types/blog'
+import { graphql } from 'gatsby'
+import BlogPostList from '../components/BlogPostList'
 
 const LanguagesMarquee = ({
     speed = 20,
@@ -27,7 +28,8 @@ const LanguagesMarquee = ({
     </Marquee>
 )
 
-function HomeContent() {
+function HomeContent({ data }: BlogProps) {
+    console.log('==== props ====', data)
     const theme: ITheme = useTheme()
 
     return (
@@ -265,8 +267,22 @@ function HomeContent() {
                 </Marquee>
             </CTASection>
 
-            <div>
-                <h3>I also write</h3>
+            <div
+                css={css`
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    padding-bottom: 60px;
+                `}
+            >
+                <h3
+                    css={css`
+                        padding: 60px;
+                    `}
+                >
+                    I also write
+                </h3>
+                <BlogPostList posts={data.blog.posts} />
                 <CTA CTAlink="/blog" CTAlabel="See my blog posts"></CTA>
             </div>
             <CTASection
@@ -280,12 +296,45 @@ function HomeContent() {
     )
 }
 
-const IndexPage = () => {
+const IndexPage = (props: BlogProps) => {
     return (
         <Layout>
-            <HomeContent />
+            <HomeContent {...props} />
         </Layout>
     )
 }
 
 export default IndexPage
+
+export const blogListQuery = graphql`
+    query {
+        blog: allMarkdownRemark {
+            posts: nodes {
+                fields {
+                    slug
+                }
+                frontmatter {
+                    date
+                    title
+                    duration
+                    cover_image {
+                        childImageSharp {
+                            gatsbyImageData(
+                                width: 800
+                                height: 250
+                                placeholder: BLURRED
+                                transformOptions: {
+                                    fit: COVER
+                                    cropFocus: CENTER
+                                }
+                                formats: [AUTO, WEBP, AVIF]
+                            )
+                        }
+                    }
+                }
+                excerpt
+                id
+            }
+        }
+    }
+`

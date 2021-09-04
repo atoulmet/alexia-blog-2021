@@ -1,12 +1,15 @@
 import { StaticImage, IImage } from 'gatsby-plugin-image'
-import { useTheme, css } from '@emotion/react'
+import { useTheme, css, keyframes } from '@emotion/react'
 import { Layout, Card, CTASection } from '../components'
 import Hi from '../icons/hi'
 import { ITheme, hideDotsStyle, highlightTitleStyle } from '../style/theme'
 
 function About() {
     const theme: ITheme = useTheme()
-
+    const hiAnimation = keyframes`
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(10deg);}
+    `
     return (
         <Layout>
             <div
@@ -34,6 +37,10 @@ function About() {
                             z-index: 1;
                             top: 0;
                             right: 0;
+                            & > svg {
+                                animation: ${hiAnimation} 2s steps(2) infinite
+                                    none;
+                            }
                         `}
                     >
                         <Hi />
@@ -116,15 +123,13 @@ function About() {
                         }
                     `}
                 >
-                    <h3>Background</h3>
+                    <h3>Why Freelancing ?</h3>
                     <p>
-                        I graduated from Sciences Po Paris in 2016 in Public
-                        Affairs, and decided right away I wanted to start
-                        coding. I wanted to create things on my own. I learned C
-                        at 42, and discovered web development in 2017 (still at
-                        42). I fell in love with JavaScript, especially React. I
-                        got my first coding experience at PayFit. After a super
-                        fulfilling year, I decided to become a freelancer.
+                        Because it is the best way to split my time between
+                        coding, teaching and my other side projects. I love
+                        taking part in coding projects, be part of developper
+                        teams, and ship new features... But it is also really
+                        important to share what I learn through teaching.{' '}
                     </p>
                 </Card>
 

@@ -28,7 +28,13 @@ export default function CTASection({
                 align-items: center;
             `}
         >
-            <h3>{title}</h3>
+            <h3
+                css={css`
+                    padding-bottom: 16px;
+                `}
+            >
+                {title}
+            </h3>
             {children}
             <CTA CTAlink={CTAlink} CTAlabel={CTAlabel} />
         </div>

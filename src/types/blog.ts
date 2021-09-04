@@ -1,3 +1,5 @@
+import { IGatsbyImageData } from 'gatsby-plugin-image'
+
 export interface BlogProps {
     data: {
         blog: {
@@ -15,9 +17,13 @@ export interface Post {
     frontmatter: {
         title: string
         author: string
+        cover_image: {
+            childImageSharp: IGatsbyImageData
+        }
         date: string
+        duration: string
     }
-    excerpt: any
+    excerpt: string
 }
 
 export interface BlogPostProps {
