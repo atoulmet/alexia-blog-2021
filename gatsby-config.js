@@ -24,6 +24,23 @@ module.exports = {
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         `gatsby-transformer-remark`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 600,
+                            withWebp: true,
+                            showCaptions: true,
+                            quality: 100,
+                        },
+                    },
+                ],
+            },
+        },
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
@@ -52,6 +69,13 @@ module.exports = {
             options: {
                 name: `blog`,
                 path: `${__dirname}/src/content/blog`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `portfolio`,
+                path: `${__dirname}/src/content/portfolio`,
             },
         },
     ],

@@ -25,9 +25,9 @@ One thing struck me really quickly when discovering this world: it sounded reall
 
 Indie Hackers don’t only create things, they’re also pursuing an ideal of independence. In some interviews like this one I loved on [CodeNewbie](https://www.codenewbie.org/podcast/what-s-an-indiehacker), Courtland Allen calls it “an act of rebellion” against two things:
 
-- Working a 9 to 5 job. For developers, it can be frustrating to trade your time for a salary to produce code for a company, code that will create a huge value for the company since it can be used over and over, even after the employee left.
+-   Working a 9 to 5 job. For developers, it can be frustrating to trade your time for a salary to produce code for a company, code that will create a huge value for the company since it can be used over and over, even after the employee left.
 
-- It also can be seen as a rebellion against the cult of startups who value growth and fundraising more than anything. For indie hackers, it’s a way to say “hey, let’s keep things at a human scale, we can still create a lot of value, and we don’t need to hire 10 new people every week, and raise millions every year”.
+-   It also can be seen as a rebellion against the cult of startups who value growth and fundraising more than anything. For indie hackers, it’s a way to say “hey, let’s keep things at a human scale, we can still create a lot of value, and we don’t need to hire 10 new people every week, and raise millions every year”.
 
 ### One solution among others
 
@@ -44,16 +44,16 @@ For now freelancing is my solution. Being an indie hacker is Jean Elie's and so 
 
 ### If you want to learn more about Indie Hackers:
 
-- [Indie Hackers Website](https://www.indiehackers.com/)
-- [Courtland Allen’s interview](<(https://www.codenewbie.org/podcast/what-s-an-indiehacker)>)
-- [Start small, Stay small by Rob Walling](https://www.amazon.fr/Start-Small-Stay-Developers-Launching/dp/0615373968)
+-   [Indie Hackers Website](https://www.indiehackers.com/)
+-   [Courtland Allen’s interview](<(https://www.codenewbie.org/podcast/what-s-an-indiehacker)>)
+-   [Start small, Stay small by Rob Walling](https://www.amazon.fr/Start-Small-Stay-Developers-Launching/dp/0615373968)
 
 Some inspiring Indie Hackers:
 
-- [Jean Elie](https://twitter.com/jebarjonet)
-- [Alyssa X](https://twitter.com/alyssaxuu)
-- [Aiden](https://twitter.com/Aidenbuis)
-- [Anne-Laure Le Cunff](https://twitter.com/anthilemoon)
-- [Adrien Joly](https://twitter.com/adrienjoly)
+-   [Jean Elie](https://twitter.com/jebarjonet)
+-   [Alyssa X](https://twitter.com/alyssaxuu)
+-   [Aiden](https://twitter.com/Aidenbuis)
+-   [Anne-Laure Le Cunff](https://twitter.com/anthilemoon)
+-   [Adrien Joly](https://twitter.com/adrienjoly)
 
 If you want to share some other ressources, don't hesite to [tweet it to me](https://twitter.com/atoulmet), or to shoot me an [email](mailto:alexia.toulmet@gmail.com)!

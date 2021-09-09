@@ -29,7 +29,6 @@ const LanguagesMarquee = ({
 )
 
 function HomeContent({ data }: BlogProps) {
-    console.log('==== props ====', data)
     const theme: ITheme = useTheme()
 
     return (
@@ -308,7 +307,9 @@ export default IndexPage
 
 export const blogListQuery = graphql`
     query {
-        blog: allMarkdownRemark {
+        blog: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "//blog//" } }
+        ) {
             posts: nodes {
                 fields {
                     slug

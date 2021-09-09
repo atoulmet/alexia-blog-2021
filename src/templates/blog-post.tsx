@@ -1,48 +1,109 @@
 import { graphql } from 'gatsby'
 import { BlogPostProps } from '../types/blog'
 import { Layout, Card, CTASection, CTA } from '../components'
-import { css } from '@emotion/react'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { css, useTheme } from '@emotion/react'
+import { ITheme, hideDotsStyle, highlightTextStyle } from '../style/theme'
 
-export default function BlogPost({ data }: BlogPostProps) {
+function BlogPostContent({ data }: BlogPostProps) {
     const post = data.markdownRemark
+    const theme: ITheme = useTheme()
+    const image = getImage(post.frontmatter.cover_image.childImageSharp)
 
     return (
-        <Layout>
+        <div
+            css={css`
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding-top: 60px;
+            `}
+        >
             <div
                 css={css`
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    background-color: white;
+                    position: relative;
                     max-width: 750px;
+                    padding: 60px;
+                    padding-bottom: 0;
+                    margin-bottom: 60px;
+                    border: solid 3px black;
+                    &:after {
+                        content: '';
+                        background-color: ${theme.primary};
+                        position: absolute;
+                        left: 20px;
+                        right: -20px;
+                        top: 20px;
+                        bottom: -20px;
+                        z-index: -1;
+                    }
                 `}
             >
-                <h1>{post.frontmatter.title}</h1>
-                <small>{post.frontmatter.date}</small>
+                {image && (
+                    <GatsbyImage
+                        image={image}
+                        objectPosition="center"
+                        alt="blog-post-image"
+                        css={css`
+                            margin-bottom: 32px;
+                            border: solid 3px black;
+                        `}
+                    />
+                )}
+                <h1
+                    css={css`
+                        padding-bottom: 16px;
+                    `}
+                >
+                    {post.frontmatter.title}
+                </h1>
+                <span
+                    css={css`
+                        font-family: ${theme.normalFont};
+                        font-size: 20px;
+                    `}
+                >
+                    {post.frontmatter.date} {post.frontmatter.duration}
+                </span>
                 <div
                     dangerouslySetInnerHTML={{ __html: post.html }}
                     css={css`
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        padding: 60px 0;
+                        padding-bottom: 60px;
                         font-size: 21px;
                         font-weight: 400;
                         max-width: 750px;
 
+                        .gatsby-resp-image-figure {
+                            width: 100%;
+                            & figcaption {
+                                display: none;
+                            }
+                        }
                         blockquote {
                             margin-left: 0;
                         }
 
                         img {
                             margin-top: 30px;
+                            width: 100%;
                         }
 
                         ul {
                             margin-top: 30px;
                             list-style: none;
+                            text-align: left;
+                            width: 100%;
+
                             li {
                                 display: flex;
                                 flex-direction: row;
+                                font-family: ${theme.normalFont};
+                                padding-bottom: 6px;
                                 &:before {
                                     padding-right: 15px;
                                     content: '•';
@@ -68,6 +129,8 @@ export default function BlogPost({ data }: BlogPostProps) {
                             font-weight: 600;
                         }
                         a {
+                            color: black;
+                            text-decoration-color: ${theme.secondary};
                         }
                         .gatsby-resp-image-link {
                             box-shadow: none;
@@ -75,9 +138,18 @@ export default function BlogPost({ data }: BlogPostProps) {
                     `}
                 />
             </div>
+        </div>
+    )
+}
+
+export default function BlogPost({ data }: BlogPostProps) {
+    return (
+        <Layout>
+            <BlogPostContent data={data} />
         </Layout>
     )
 }
+
 export const query = graphql`
     query BlogQuery($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -85,6 +157,18 @@ export const query = graphql`
             frontmatter {
                 title
                 date
+                duration
+                cover_image {
+                    childImageSharp {
+                        gatsbyImageData(
+                            width: 800
+                            height: 250
+                            placeholder: BLURRED
+                            transformOptions: { fit: COVER, cropFocus: CENTER }
+                            formats: [AUTO, WEBP, AVIF]
+                        )
+                    }
+                }
             }
         }
     }

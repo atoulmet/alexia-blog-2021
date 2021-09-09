@@ -87,7 +87,9 @@ export default function Blog(props: BlogProps) {
 
 export const blogListQuery = graphql`
     query MyQuery {
-        blog: allMarkdownRemark {
+        blog: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "//blog//" } }
+        ) {
             posts: nodes {
                 fields {
                     slug
