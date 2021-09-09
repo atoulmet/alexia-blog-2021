@@ -16,6 +16,7 @@ export interface Project {
     html: string
     frontmatter: {
         layout: number
+        type: string
         title: string
         ctaLink: string
         cover_image: {

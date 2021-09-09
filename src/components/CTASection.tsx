@@ -2,7 +2,7 @@ import { useTheme, css, keyframes } from '@emotion/react'
 import { ITheme } from '../style/theme'
 import CTA, { CTAProps } from './CTA'
 
-interface CTASectionProps extends CTAProps {
+interface CTASectionProps extends Partial<CTAProps> {
     title: string
     children?: React.ReactNode
 }
@@ -26,6 +26,7 @@ export default function CTASection({
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                width: 100%;
             `}
         >
             <h3
@@ -36,7 +37,9 @@ export default function CTASection({
                 {title}
             </h3>
             {children}
-            <CTA CTAlink={CTAlink} CTAlabel={CTAlabel} />
+            {CTAlink && CTAlabel && (
+                <CTA CTAlink={CTAlink} CTAlabel={CTAlabel} />
+            )}
         </div>
     )
 }

@@ -61,6 +61,7 @@ export const globalStyle = css`
         background-size: 16px 16px;
         background-position: 0 0, 8px 8px;
         background-repeat: repeat;
+        font-family: ${theme.normalFont};
     }
 
     h1 {

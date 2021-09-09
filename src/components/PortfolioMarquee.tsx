@@ -7,10 +7,11 @@ export default function PortfolioMarquee() {
 
     return (
         <Marquee gradient={false} speed={20}>
-            <span
+            <div
                 css={css`
                     font-family: ${theme.titleFont};
                     font-size: 50px;
+                    height: 80px;
                 `}
             >
                 Portfolio ·{' '}
@@ -46,7 +47,7 @@ export default function PortfolioMarquee() {
                     文件夾
                 </span>{' '}
                 ·
-            </span>
+            </div>
         </Marquee>
     )
 }

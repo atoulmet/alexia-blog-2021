@@ -107,6 +107,10 @@ function BlogPostContent({ data }: BlogPostProps) {
                                 &:before {
                                     padding-right: 15px;
                                     content: '•';
+                                    margin-top: 32px;
+                                }
+                                & > p {
+                                    margin-top: 25px;
                                 }
                             }
                         }

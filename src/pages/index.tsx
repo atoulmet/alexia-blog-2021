@@ -230,6 +230,7 @@ function HomeContent({ data }: BlogProps) {
                                 margin: 60px;
                             `}
                         />
+
                         <StaticImage
                             src="../images/OClogo.jpeg"
                             alt="logo open classrooms"

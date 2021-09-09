@@ -1,14 +1,33 @@
 import { useTheme, css, keyframes } from '@emotion/react'
 import { ITheme } from '../style/theme'
 import { Link } from 'gatsby'
+import React from 'react'
 
 export interface CTAProps {
     CTAlink: string
     CTAlabel: string
+    isExternalLink?: boolean
+}
+
+function LinkWrapper({
+    isExternalLink,
+    children,
+    CTAlink,
+}: {
+    isExternalLink: boolean
+    children: React.ReactNode
+    CTAlink: string
+}) {
+    return isExternalLink ? (
+        <a href={CTAlink}>{children}</a>
+    ) : (
+        <Link to={CTAlink}>{children}</Link>
+    )
 }
 
 export default function CTA({ CTAlink, CTAlabel }: CTAProps) {
     const theme: ITheme = useTheme()
+    const isExternalLink = CTAlink.includes('http')
 
     return (
         <div
@@ -16,7 +35,7 @@ export default function CTA({ CTAlink, CTAlabel }: CTAProps) {
                 padding-bottom: 7px;
             `}
         >
-            <Link to={CTAlink}>
+            <LinkWrapper CTAlink={CTAlink} isExternalLink={isExternalLink}>
                 <button
                     css={css`
                         border: solid 3px black;
@@ -49,7 +68,7 @@ export default function CTA({ CTAlink, CTAlabel }: CTAProps) {
                 >
                     {CTAlabel}
                 </button>
-            </Link>
+            </LinkWrapper>
         </div>
     )
 }
