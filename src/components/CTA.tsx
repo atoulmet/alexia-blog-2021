@@ -47,6 +47,7 @@ export default function CTA({ CTAlink, CTAlabel }: CTAProps) {
                         position: relative;
                         padding-bottom: 12px;
                         cursor: pointer;
+                        color: black;
                         @media (max-width: 1200px) {
                             font-size: 20px;
                         }

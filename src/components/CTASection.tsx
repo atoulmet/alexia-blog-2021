@@ -27,6 +27,9 @@ export default function CTASection({
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+                @media (max-width: 600px) {
+                    text-align: center;
+                }
             `}
         >
             <h3

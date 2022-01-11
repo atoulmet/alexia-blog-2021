@@ -33,10 +33,10 @@ function Card({ children, cssProps }: CardProps) {
                     top: -25px;
                     z-index: -1;
                     @media (max-width: 800px) {
-                        left: 12px;
-                        right: -12px;
-                        bottom: 12px;
-                        top: -12px;
+                        left: 16px;
+                        right: -16px;
+                        bottom: 16px;
+                        top: -16px;
                     }
                 }
                 ${cssProps}
