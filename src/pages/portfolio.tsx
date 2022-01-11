@@ -417,6 +417,9 @@ function PortfolioContent({ data }: PortfolioProps) {
                                             alt="blog-post-image"
                                             css={css`
                                                 margin-top: 30px;
+                                                @media (max-width: 800px) {
+                                                    margin-bottom: 30px;
+                                                }
                                             `}
                                         />
                                     )}

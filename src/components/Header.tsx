@@ -15,7 +15,7 @@ const Navigation = ({ to, label }: { to: string; label: string }) => (
         css={css`
             position: relative;
             @media (max-width: 600px) {
-                margin-top: 30px;
+                margin-top: 40px;
                 width: fit-content;
             }
         `}
@@ -46,6 +46,7 @@ export default function Header() {
                 font-family: ${theme.titleFont};
                 font-size: 20px;
                 @media (max-width: 600px) {
+                    font-size: 30px;
                     flex-direction: column;
                     position: relative;
                     & div {

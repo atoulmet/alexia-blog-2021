@@ -59,6 +59,9 @@ function About() {
                         width={300}
                         css={css`
                             border-radius: 100%;
+                            & img {
+                                border-radius: 100%;
+                            }
                             border: solid 10px white;
                         `}
                     />
@@ -102,6 +105,7 @@ function About() {
                         align-items: flex-start;
                         padding: 30px;
                         margin-bottom: 90px;
+                        max-width: 800px;
                         & h3 {
                             padding-bottom: 16px;
                         }
@@ -125,6 +129,7 @@ function About() {
                         align-items: flex-start;
                         padding: 30px;
                         margin-bottom: 90px;
+                        max-width: 800px;
                         & h3 {
                             padding-bottom: 16px;
                         }
@@ -146,6 +151,7 @@ function About() {
                         align-items: flex-start;
                         padding: 30px;
                         margin-bottom: 90px;
+                        max-width: 800px;
                         & h3 {
                             padding-bottom: 16px;
                         }

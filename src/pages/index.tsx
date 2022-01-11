@@ -115,6 +115,9 @@ function HomeContent({ data }: BlogProps) {
                 <div
                     css={css`
                         border-radius: 100%;
+                        & img {
+                            border-radius: 100%;
+                        }
                         margin-left: 60px;
                         position: relative;
                         @media (max-width: 1024px) {
