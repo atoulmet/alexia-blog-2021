@@ -15,13 +15,14 @@ function Card({ children, cssProps }: CardProps) {
                 border: solid black 3px;
                 position: relative;
                 background-color: white;
-
                 margin: 0 60px;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 text-align: center;
-
+                @media (max-width: 800px) {
+                    margin: 16px;
+                }
                 &:after {
                     content: '';
                     background-color: ${theme.primary};
@@ -31,6 +32,12 @@ function Card({ children, cssProps }: CardProps) {
                     bottom: 25px;
                     top: -25px;
                     z-index: -1;
+                    @media (max-width: 800px) {
+                        left: 12px;
+                        right: -12px;
+                        bottom: 12px;
+                        top: -12px;
+                    }
                 }
                 ${cssProps}
             `}

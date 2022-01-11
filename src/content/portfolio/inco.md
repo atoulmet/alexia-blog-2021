@@ -6,6 +6,7 @@ cover_image: './test.png'
 logo: './inco.png'
 ctaLink: 'yes'
 layout: 2
+order: 1
 type: 'commercial'
 ---
 

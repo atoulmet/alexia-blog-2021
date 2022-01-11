@@ -44,6 +44,13 @@ function HomeContent({ data }: BlogProps) {
                     justify-content: center;
                     align-items: center;
                     margin: 140px 0;
+                    @media (max-width: 1024px) {
+                        flex-direction: column;
+                        margin: 60px 0 140px 0;
+                    }
+                    @media (max-width: 600px) {
+                        margin: 60px 0 60px 0;
+                    }
                 `}
             >
                 <div
@@ -53,6 +60,15 @@ function HomeContent({ data }: BlogProps) {
                         max-width: 430px;
                         margin-right: 60px;
                         ${hideDotsStyle};
+                        @media (max-width: 1024px) {
+                            order: 2;
+                            margin-right: 0;
+                            margin-top: 30px;
+                            margin-left: 30px;
+                        }
+                        @media (max-width: 600px) {
+                            width: 70%;
+                        }
                     `}
                 >
                     <h1>Hello</h1>
@@ -69,6 +85,10 @@ function HomeContent({ data }: BlogProps) {
                     <p
                         css={css`
                             padding-top: 20px;
+                            @media (max-width: 1024px) {
+                                order: 2;
+                                margin-right: 0;
+                            }
                         `}
                     >
                         Welcome to{' '}
@@ -96,8 +116,10 @@ function HomeContent({ data }: BlogProps) {
                     css={css`
                         border-radius: 100%;
                         margin-left: 60px;
-
                         position: relative;
+                        @media (max-width: 1024px) {
+                            margin-left: 0;
+                        }
                     `}
                 >
                     <StaticImage
@@ -122,6 +144,11 @@ function HomeContent({ data }: BlogProps) {
                                 right: -50px;
                                 background-color: ${theme.primary};
                                 z-index: -1;
+                                @media (max-width: 600px) {
+                                    left: -30px;
+                                    left: 0px;
+                                    top: -30px;
+                                }
                             }
                         `}
                     />
@@ -145,12 +172,19 @@ function HomeContent({ data }: BlogProps) {
                     align-items: center;
                     padding-top: 75px;
                     margin-bottom: 150px;
+                    @media (max-width: 600px) {
+                        margin-bottom: 60px;
+                    }
                 `}
             >
                 <h2
                     css={css`
                         padding-top: 75px;
                         padding-bottom: 90px;
+                        @media (max-width: 600px) {
+                            padding-top: 0;
+                            padding-bottom: 45px;
+                        }
                     `}
                 >
                     What I do
@@ -159,12 +193,26 @@ function HomeContent({ data }: BlogProps) {
                     css={css`
                         display: flex;
                         flex-direction: row;
+                        @media (max-width: 1024px) {
+                            flex-direction: column;
+                        }
                     `}
                 >
                     <Card
                         cssProps={css`
                             padding: 60px 30px;
                             width: 400px;
+                            @media (max-width: 1200px) {
+                                width: 350px;
+                            }
+                            @media (max-width: 1024px) {
+                                margin-bottom: 60px;
+                            }
+                            @media (max-width: 500px) {
+                                width: 70%;
+                                align-self: center;
+                            }
+
                             &h3 {
                                 text-decoration: underline;
                             }
@@ -189,6 +237,14 @@ function HomeContent({ data }: BlogProps) {
                         cssProps={css`
                             padding: 60px 30px;
                             width: 400px;
+                            @media (max-width: 1200px) {
+                                width: 350px;
+                            }
+                            @media (max-width: 500px) {
+                                width: 70%;
+                                align-self: center;
+                            }
+
                             &h3 {
                                 text-decoration: underline;
                             }

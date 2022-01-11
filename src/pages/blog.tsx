@@ -59,6 +59,9 @@ function BlogContent({ data }: BlogProps) {
                     css={css`
                         font-weight: 600;
                         margin-bottom: 30px;
+                        @media (max-width: 800px) {
+                            text-align: center;
+                        }
                     `}
                 >
                     But when I can, I try to share things with you !

@@ -42,11 +42,14 @@ export default function CTA({ CTAlink, CTAlabel }: CTAProps) {
                         background-color: white;
                         font-family: ${theme.normalFont};
                         font-size: 24px;
-                        font-weight: 600;
+                        font-weight: 800;
                         padding: 15px 30px;
                         position: relative;
                         padding-bottom: 12px;
                         cursor: pointer;
+                        @media (max-width: 1200px) {
+                            font-size: 20px;
+                        }
                         &:hover {
                             transform: translate(0px, 2px);
                             transition: 200ms;

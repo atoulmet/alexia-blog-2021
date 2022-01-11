@@ -29,6 +29,20 @@ function BlogPostContent({ data }: BlogPostProps) {
                     padding-bottom: 0;
                     margin-bottom: 60px;
                     border: solid 3px black;
+                    @media (max-width: 1024px) {
+                        width: 80%;
+                    }
+                    @media (max-width: 900px) {
+                        width: 70%;
+                    }
+                    @media (max-width: 700px) {
+                        padding: 30px;
+                        width: 80%;
+                    }
+                    @media (max-width: 600px) {
+                        border: none;
+                        background-color: white;
+                    }
                     &:after {
                         content: '';
                         background-color: ${theme.primary};
@@ -38,6 +52,9 @@ function BlogPostContent({ data }: BlogPostProps) {
                         top: 20px;
                         bottom: -20px;
                         z-index: -1;
+                        @media (max-width: 600px) {
+                            display: none;
+                        }
                     }
                 `}
             >
@@ -59,14 +76,15 @@ function BlogPostContent({ data }: BlogPostProps) {
                 >
                     {post.frontmatter.title}
                 </h1>
-                <span
+                <div
                     css={css`
                         font-family: ${theme.normalFont};
                         font-size: 20px;
+                        margin-bottom: 20px;
                     `}
                 >
                     {post.frontmatter.date} {post.frontmatter.duration}
-                </span>
+                </div>
                 <div
                     dangerouslySetInnerHTML={{ __html: post.html }}
                     css={css`
@@ -77,7 +95,7 @@ function BlogPostContent({ data }: BlogPostProps) {
                         font-size: 21px;
                         font-weight: 400;
                         max-width: 750px;
-
+                        line-height: 1.58;
                         .gatsby-resp-image-figure {
                             width: 100%;
                             & figcaption {
@@ -107,10 +125,10 @@ function BlogPostContent({ data }: BlogPostProps) {
                                 &:before {
                                     padding-right: 15px;
                                     content: '•';
-                                    margin-top: 32px;
+                                    margin-top: 2px;
                                 }
                                 & > p {
-                                    margin-top: 25px;
+                                    margin-bottom: 25px;
                                 }
                             }
                         }
@@ -119,8 +137,7 @@ function BlogPostContent({ data }: BlogPostProps) {
                             font-size: 21px;
                             line-height: 1.58;
                             letter-spacing: -0.003em;
-                            margin-bottom: 0;
-                            margin-top: 38px;
+                            margin-bottom: 25px;
                         }
                         h1,
                         h2,
@@ -128,8 +145,7 @@ function BlogPostContent({ data }: BlogPostProps) {
                         h4,
                         h5,
                         h6 {
-                            margin-top: 56px;
-                            margin-bottom: 8px;
+                            margin: 30px 0;
                             font-weight: 600;
                         }
                         a {

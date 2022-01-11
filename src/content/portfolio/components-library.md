@@ -5,6 +5,7 @@ duration: 'TEST'
 cover_image: './test.png'
 logo: './agorastore.png'
 layout: 1
+order: 3
 type: 'commercial'
 ---
 

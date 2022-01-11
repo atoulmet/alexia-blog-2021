@@ -19,6 +19,10 @@ function About() {
                     align-items: center;
                     justify-content: center;
                     margin: 0 90px 30px 90px;
+                    @media (max-width: 1024px) {
+                        margin: 0 0 30px 0;
+                        overflow: hidden;
+                    }
                 `}
             >
                 <div
@@ -37,6 +41,9 @@ function About() {
                             z-index: 1;
                             top: 0;
                             right: 0;
+                            @media (max-width: 600px) {
+                                right: 30px;
+                            }
                             & > svg {
                                 animation: ${hiAnimation} 2s steps(2) infinite
                                     none;

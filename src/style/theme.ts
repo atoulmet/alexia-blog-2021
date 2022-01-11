@@ -74,6 +74,9 @@ export const globalStyle = css`
         font-size: 40px;
         font-family: ${theme.titleFont};
         line-height: 55px;
+        @media (max-width: 600px) {
+            font-size: 30px;
+        }
     }
 
     h3 {

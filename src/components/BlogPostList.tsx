@@ -53,6 +53,11 @@ export default function BlogPostList({ posts, isBlueBG }: BlogPostListProps) {
                                     z-index: -1;
                                     border-radius: 8px;
                                 }
+                                @media (max-width: 800px) {
+                                    width: 85%;
+                                    margin: auto;
+                                    margin-bottom: 60px;
+                                }
                             `}
                         >
                             {image && (
@@ -63,6 +68,9 @@ export default function BlogPostList({ posts, isBlueBG }: BlogPostListProps) {
                                     css={css`
                                         border: solid 3px black;
                                         border-bottom: none;
+                                        @media (max-width: 800px) {
+                                            height: 250px;
+                                        }
                                     `}
                                 />
                             )}

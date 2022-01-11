@@ -1,6 +1,7 @@
 import { css, useTheme } from '@emotion/react'
 import { useState } from 'react'
 import { graphql } from 'gatsby'
+import Marquee from 'react-fast-marquee'
 import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
 import { Layout, Card, CTASection, CTA, PortfolioMarquee } from '../components'
 import { ITheme } from '../style/theme'
@@ -11,7 +12,7 @@ import calculatorGif from '../images/calculator.gif'
 const technologiesIUse = [
     'React',
     'Node',
-    'Gasby',
+    'Gatsby',
     'Storybook',
     'Express',
     'Next',
@@ -23,18 +24,6 @@ const technologiesIUse = [
     'Git',
     'Redux',
     'GraphQL',
-    'React',
-    'Node',
-    'Gasby',
-    'Storybook',
-    'Express',
-    'Next',
-    'Mongo',
-    'SQL',
-    'CSS',
-    'CSSAnimations',
-    'Bash',
-    'Git',
 ]
 
 function AnimatedSkills() {
@@ -108,6 +97,9 @@ function PortfolioContent({ data }: PortfolioProps) {
                 align-items: center;
                 margin-top: 90px;
                 width: 100%;
+                @media (max-width: 800px) {
+                    margin-top: 60px;
+                }
             `}
         >
             <PortfolioMarquee />
@@ -117,6 +109,14 @@ function PortfolioContent({ data }: PortfolioProps) {
                     font-family: ${theme.normalFont};
                     padding-bottom: 32px;
                     font-size: 25px;
+                    @media (max-width: 800px) {
+                        padding-top: 30px;
+                    }
+                    @media (max-width: 600px) {
+                        padding: 0 15px;
+                        padding-bottom: 30px;
+                        font-size: 20px;
+                    }
                 `}
             >
                 Here are some things I did in the 4+ years since I’m coding in
@@ -127,6 +127,9 @@ function PortfolioContent({ data }: PortfolioProps) {
                 css={css`
                     text-align: center;
                     padding-bottom: 60px;
+                    @media (max-width: 600px) {
+                        padding-bottom: 30px;
+                    }
                 `}
             >
                 Commercial coding
@@ -145,12 +148,18 @@ function PortfolioContent({ data }: PortfolioProps) {
                             flex-direction: column;
                             max-width: 1150px;
                             margin-bottom: 60px;
+                            @media (max-width: 800px) {
+                                margin: 0 30px 30px 30px;
+                            }
                         `}
                     >
                         <div
                             css={css`
                                 display: flex;
                                 flex-direction: row;
+                                @media (max-width: 800px) {
+                                    flex-direction: column;
+                                }
                             `}
                         >
                             <div
@@ -164,15 +173,25 @@ function PortfolioContent({ data }: PortfolioProps) {
                                     ${frontmatter.layout === 1
                                         ? 'padding-right: 0'
                                         : 'padding-left: 0'};
+                                    @media (max-width: 800px) {
+                                        padding: 30px;
+                                        ${frontmatter.layout === 1
+                                            ? 'padding-bottom: 0'
+                                            : 'padding-top: 0'};
+                                    }
                                 `}
                             >
                                 <div
                                     css={css`
                                         font-family: ${theme.normalFont};
-                                        font-size: 22px;
+                                        font-size: 20px;
+                                        line-height: 30px;
                                         display: flex;
                                         justify-content: flex-start;
                                         text-align: left;
+                                        @media (max-width: 800px) {
+                                            text-align: center;
+                                        }
                                     `}
                                 >
                                     Lorem, ipsum dolor sit amet consectetur
@@ -185,10 +204,16 @@ function PortfolioContent({ data }: PortfolioProps) {
                                 {logo && (
                                     <GatsbyImage
                                         image={logo}
-                                        objectPosition="center"
+                                        // objectPosition="center"
                                         alt="blog-post-image"
                                         css={css`
-                                            margin-top: 30px;
+                                            margin-top: 20px;
+                                            @media (max-width: 800px) {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                align-self: center;
+                                            }
                                         `}
                                     />
                                 )}
@@ -207,6 +232,9 @@ function PortfolioContent({ data }: PortfolioProps) {
                                         css={css`
                                             margin: 30px;
                                             height: 450px;
+                                            @media (max-width: 800px) {
+                                                height: 300px;
+                                            }
                                         `}
                                     />
                                 )}
@@ -218,6 +246,9 @@ function PortfolioContent({ data }: PortfolioProps) {
                                     margin-bottom: 30px;
                                     & button {
                                         width: 400px;
+                                        @media (max-width: 800px) {
+                                            width: unset;
+                                        }
                                     }
                                 `}
                             >
@@ -230,39 +261,64 @@ function PortfolioContent({ data }: PortfolioProps) {
                     </Card>
                 )
             })}
-            <CTASection title="I also had the pleasure to be part of other great teams">
-                <div
-                    css={css`
-                        display: flex;
-                        flex-direction: row;
-                    `}
-                >
-                    <StaticImage
-                        src="../images/payfit.png"
-                        alt="logo payfit"
-                        height={100}
+            <div
+                css={css`
+                    @media (max-width: 800px) {
+                        padding-bottom: 60px;
+                    }
+                `}
+            />
+            <CTASection title="I had the pleasure to be part of great teams">
+                <Marquee gradient={false} speed={20}>
+                    <div
                         css={css`
-                            margin: 60px;
+                            display: flex;
+                            flex-direction: row;
                         `}
-                    />
-                    <StaticImage
-                        src="../images/kardinal.svg"
-                        alt="logo kardinal"
-                        height={50}
-                        width={100}
-                        css={css`
-                            margin: 60px;
-                        `}
-                    />
-                    <StaticImage
-                        src="../images/solypse.png"
-                        alt="logo solypse"
-                        height={100}
-                        css={css`
-                            margin: 60px;
-                        `}
-                    />
-                </div>
+                    >
+                        <StaticImage
+                            src="../images/payfit.png"
+                            alt="logo payfit"
+                            height={100}
+                            css={css`
+                                margin: 60px;
+                            `}
+                        />
+                        <StaticImage
+                            src="../images/kardinal.png"
+                            alt="logo kardinal"
+                            width={300}
+                            height={100}
+                            css={css`
+                                margin: 60px;
+                            `}
+                        />
+                        <StaticImage
+                            src="../images/peyce.png"
+                            alt="logo peyce"
+                            height={100}
+                            css={css`
+                                margin: 60px;
+                            `}
+                        />
+                        <StaticImage
+                            src="../images/agorastore.png"
+                            alt="logo agorastore"
+                            height={100}
+                            css={css`
+                                margin: 60px;
+                            `}
+                        />
+                        <StaticImage
+                            src="../images/solypse.png"
+                            alt="logo solypse"
+                            height={100}
+                            css={css`
+                                margin: 60px;
+                            `}
+                        />
+                    </div>
+                </Marquee>
             </CTASection>
 
             <h2
@@ -270,6 +326,10 @@ function PortfolioContent({ data }: PortfolioProps) {
                     text-align: center;
                     padding-bottom: 60px;
                     padding-top: 90px;
+                    @media (max-width: 800px) {
+                        padding-top: 60px;
+                        padding-bottom: 30px;
+                    }
                 `}
             >
                 I also teach
@@ -279,6 +339,12 @@ function PortfolioContent({ data }: PortfolioProps) {
                     display: grid;
                     max-width: 1150px;
                     grid-template-columns: repeat(2, 1fr);
+                    @media (max-width: 800px) {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin-bottom: 60px;
+                    }
                 `}
             >
                 {teachingProjects.map((project) => {
@@ -300,6 +366,14 @@ function PortfolioContent({ data }: PortfolioProps) {
                                     : layout === 3
                                     ? '1 / 2'
                                     : '2 / 3'};
+                                @media (max-width: 800px) {
+                                    grid-column: unset;
+                                    margin-bottom: 60px;
+                                    margin: 0 30px;
+                                }
+                                @media (max-width: 600px) {
+                                    margin-bottom: 30px;
+                                }
                             `}
                         >
                             <div
@@ -307,6 +381,9 @@ function PortfolioContent({ data }: PortfolioProps) {
                                     display: flex;
                                     flex-direction: row;
                                     padding: ${layout < 3 ? 0 : '30px'};
+                                    @media (max-width: 800px) {
+                                        flex-direction: column;
+                                    }
                                 `}
                             >
                                 <div
@@ -320,12 +397,17 @@ function PortfolioContent({ data }: PortfolioProps) {
                                         ${layout === 1
                                             ? 'padding-right: 0'
                                             : 'padding-left: 0'};
+                                        @media (max-width: 800px) {
+                                            align-items: center;
+                                            padding: 0 30px 0 30px;
+                                        }
                                     `}
                                 >
                                     <div
                                         css={css`
                                             font-family: ${theme.normalFont};
-                                            font-size: 22px;
+                                            font-size: 20px;
+                                            line-height: 30px;
                                             display: flex;
                                             justify-content: flex-start;
                                             text-align: left;
@@ -363,6 +445,9 @@ function PortfolioContent({ data }: PortfolioProps) {
                                             css={css`
                                                 margin: 30px;
                                                 height: 450px;
+                                                @media (max-width: 800px) {
+                                                    height: 300px;
+                                                }
                                             `}
                                         />
                                     </div>
@@ -374,6 +459,9 @@ function PortfolioContent({ data }: PortfolioProps) {
                                         margin-bottom: 30px;
                                         & button {
                                             width: 400px;
+                                            @media (max-width: 800px) {
+                                                width: unset;
+                                            }
                                         }
                                     `}
                                 >
@@ -397,6 +485,10 @@ function PortfolioContent({ data }: PortfolioProps) {
                     text-align: center;
                     padding-bottom: 60px;
                     padding-top: 90px;
+                    @media (max-width: 800px) {
+                        padding-top: 60px;
+                        padding-bottom: 60px;
+                    }
                 `}
             >
                 And have fun with code
@@ -407,12 +499,23 @@ function PortfolioContent({ data }: PortfolioProps) {
                     grid-template-columns: repeat(2, 1fr);
                     max-width: 1150px;
                     padding-bottom: 90px;
+                    @media (max-width: 800px) {
+                        grid-template-columns: 1fr;
+                    }
                 `}
             >
                 <Card
                     cssProps={css`
                         grid-column: 1/2;
                         padding: 30px;
+                        @media (max-width: 800px) {
+                            grid-column: unset;
+                            margin: 0 30px;
+                            margin-bottom: 60px;
+                        }
+                        @media (max-width: 600px) {
+                            margin-bottom: 30px;
+                        }
                     `}
                 >
                     <img
@@ -433,6 +536,11 @@ function PortfolioContent({ data }: PortfolioProps) {
                     cssProps={css`
                         grid-column: 2/3;
                         padding: 30px;
+                        @media (max-width: 800px) {
+                            grid-column: unset;
+                            margin-bottom: 30px;
+                            margin: 0 30px;
+                        }
                     `}
                 >
                     <img
@@ -469,6 +577,7 @@ export const portfolioQuery = graphql`
     query PortfolioQuery {
         portfolio: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "//portfolio//" } }
+            sort: { fields: [frontmatter___order], order: DESC }
         ) {
             projects: nodes {
                 fields {
@@ -496,11 +605,10 @@ export const portfolioQuery = graphql`
                     logo {
                         childImageSharp {
                             gatsbyImageData(
+                                width: 200
+                                layout: FIXED
                                 placeholder: BLURRED
-                                transformOptions: {
-                                    fit: COVER
-                                    cropFocus: CENTER
-                                }
+
                                 formats: [AUTO, WEBP, AVIF]
                             )
                         }

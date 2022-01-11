@@ -50,7 +50,7 @@ export default function Footer() {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 30px 0 60px 0;
+                padding: 30px 0;
             `}
         >
             <h4
@@ -80,6 +80,7 @@ export default function Footer() {
             >
                 {socialLinks.map((elem, index) => (
                     <a
+                        target="_blank"
                         href={elem.link}
                         key={`item_${index}`}
                         css={css`
@@ -87,6 +88,18 @@ export default function Footer() {
                             &:hover > svg {
                                 animation: ${shakeAnimation} 0.5s;
                                 animation-iteration-count: infinite;
+                            }
+                            @media (max-width: 600px) {
+                                & svg {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                            @media (max-width: 400px) {
+                                & svg {
+                                    width: 40px;
+                                    height: 40px;
+                                }
                             }
                         `}
                     >
