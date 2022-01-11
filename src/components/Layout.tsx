@@ -6,6 +6,7 @@ import emotionReset from 'emotion-reset'
 // import { getAsset } from '../utils/fileManagement'
 import { Header, Footer } from './'
 import { theme, globalStyle } from '../style/theme'
+import React from 'react'
 
 interface StaticQueryProps {
     site: {
@@ -31,7 +32,13 @@ interface StaticQueryProps {
     }
 }
 
-const Layout: React.FC = ({ children }) => {
+const Layout = ({
+    children,
+    layoutTitle,
+}: {
+    children: React.ReactNode
+    layoutTitle?: string
+}) => {
     return (
         <StaticQuery
             query={graphql`
@@ -72,15 +79,12 @@ const Layout: React.FC = ({ children }) => {
                     },
                     {
                         property: 'og:logo',
-                        // content: staticImg,
                     },
                     {
                         property: 'og:image',
-                        // content: staticImg,
                     },
                     {
                         property: 'image',
-                        // content: staticImg,
                     },
                     {
                         name: `twitter:card`,
@@ -100,9 +104,9 @@ const Layout: React.FC = ({ children }) => {
                     },
                     {
                         name: 'twitter:image',
-                        // content: staticImg,
                     },
                 ]
+
                 return (
                     <div>
                         <Helmet
@@ -116,8 +120,16 @@ const Layout: React.FC = ({ children }) => {
                                 },
                             ]}
                             meta={meta}
-                            title={data.site.siteMetadata.title}
-                            titleTemplate={title}
+                            title={
+                                layoutTitle
+                                    ? layoutTitle
+                                    : data.site.siteMetadata.title
+                            }
+                            titleTemplate={
+                                layoutTitle
+                                    ? layoutTitle
+                                    : data.site.siteMetadata.title
+                            }
                         >
                             <meta charSet="utf-8" />
                             <link

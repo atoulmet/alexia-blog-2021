@@ -16,6 +16,8 @@ export interface Project {
     html: string
     frontmatter: {
         layout: number
+        content: string
+        order: number
         type: string
         title: string
         ctaLink: string

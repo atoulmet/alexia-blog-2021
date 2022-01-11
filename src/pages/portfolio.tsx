@@ -194,12 +194,7 @@ function PortfolioContent({ data }: PortfolioProps) {
                                         }
                                     `}
                                 >
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Fuga ut libero quam sit
-                                    quidem ducimus officia? Aperiam recusandae
-                                    saepe nisi illo veritatis porro dolorum,
-                                    eos, culpa, ratione perspiciatis suscipit
-                                    corrupti!
+                                    {frontmatter.content}
                                 </div>
                                 {logo && (
                                     <GatsbyImage
@@ -413,12 +408,7 @@ function PortfolioContent({ data }: PortfolioProps) {
                                             text-align: left;
                                         `}
                                     >
-                                        Lorem, ipsum dolor sit amet consectetur
-                                        adipisicing elit. Fuga ut libero quam
-                                        sit quidem ducimus officia? Aperiam
-                                        recusandae saepe nisi illo veritatis
-                                        porro dolorum, eos, culpa, ratione
-                                        perspiciatis suscipit corrupti!
+                                        {project.frontmatter.content}
                                     </div>
                                     {logoImg && (
                                         <GatsbyImage
@@ -567,7 +557,7 @@ function PortfolioContent({ data }: PortfolioProps) {
 
 export default function Portfolio({ data }: PortfolioProps) {
     return (
-        <Layout>
+        <Layout layoutTitle={'Alexia Toulmet - Portfolio'}>
             <PortfolioContent data={data} />
         </Layout>
     )
@@ -589,6 +579,8 @@ export const portfolioQuery = graphql`
                     layout
                     type
                     ctaLink
+                    content
+                    order
                     cover_image {
                         childImageSharp {
                             gatsbyImageData(

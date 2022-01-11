@@ -65,15 +65,15 @@ function BurgerMenu({
                         top: 24px;
                         left: 20px;
                         margin: 7px 0;
-                        &:nth-child(1) {
-                            transition-delay: ${!isOpen ? '.5s' : '0s'};
-                        }
-                        &:nth-child(2) {
-                            transition-delay: ${!isOpen ? '.625s' : '.125s'};
-                        }
-                        &:nth-child(3) {
-                            transition-delay: ${!isOpen ? '.75s' : '.25s'};
-                        }
+                    }
+                    & span:nth-of-type(1) {
+                        transition-delay: ${!isOpen ? '.5s' : '0s'};
+                    }
+                    & span:nth-of-type(2) {
+                        transition-delay: ${!isOpen ? '.625s' : '.125s'};
+                    }
+                    & span:nth-of-type(3) {
+                        transition-delay: ${!isOpen ? '.75s' : '.25s'};
                     }
                 `}
             >
@@ -94,20 +94,20 @@ function BurgerMenu({
                     transform: rotate(45deg);
                     span {
                         transition: 0.25s ease-in-out;
-                        &:nth-child(1) {
-                            height: ${isOpen ? '100%' : '0%'};
-                            width: 4px;
-                            position: absolute;
-                            left: 18px;
-                            transition-delay: ${!isOpen ? '0' : '.625s'};
-                        }
-                        &:nth-child(2) {
-                            width: ${isOpen ? '100%' : '0%'};
-                            height: 4px;
-                            position: absolute;
-                            top: 18px;
-                            transition-delay: ${!isOpen ? '.25s' : '.375s'};
-                        }
+                    }
+                    & span:nth-of-type(1) {
+                        height: ${isOpen ? '100%' : '0%'};
+                        width: 4px;
+                        position: absolute;
+                        left: 18px;
+                        transition-delay: ${!isOpen ? '0' : '.625s'};
+                    }
+                    & span:nth-of-type(2) {
+                        width: ${isOpen ? '100%' : '0%'};
+                        height: 4px;
+                        position: absolute;
+                        top: 18px;
+                        transition-delay: ${!isOpen ? '.25s' : '.375s'};
                     }
                 `}
             >

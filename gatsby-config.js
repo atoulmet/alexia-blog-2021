@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: "Alexia Toulmet's personal website",
+        title: "Alexia Toulmet's site",
         description: `Hi 👋! I am a fullstack software engineer. When I'm not creating new React components, I am teaching code.`,
         keywords: 'frontend, code, teaching, software',
         siteUrl: 'https://alexiatoulmet.com',
@@ -37,6 +37,16 @@ module.exports = {
                             showCaptions: true,
                             quality: 100,
                         },
+                    },
+                ],
+            },
+        },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-highlight-code`,
                     },
                 ],
             },

@@ -82,7 +82,7 @@ function BlogContent({ data }: BlogProps) {
 
 export default function Blog(props: BlogProps) {
     return (
-        <Layout>
+        <Layout layoutTitle={'Alexia Toulmet - Blog'}>
             <BlogContent {...props} />
         </Layout>
     )

@@ -1,9 +1,11 @@
 import { graphql } from 'gatsby'
 import { BlogPostProps } from '../types/blog'
-import { Layout, Card, CTASection, CTA } from '../components'
+import { Layout } from '../components'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { css, useTheme } from '@emotion/react'
-import { ITheme, hideDotsStyle, highlightTextStyle } from '../style/theme'
+import { ITheme } from '../style/theme'
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
+deckDeckGoHighlightElement()
 
 function BlogPostContent({ data }: BlogPostProps) {
     const post = data.markdownRemark
@@ -164,7 +166,9 @@ function BlogPostContent({ data }: BlogPostProps) {
 
 export default function BlogPost({ data }: BlogPostProps) {
     return (
-        <Layout>
+        <Layout
+            layoutTitle={`Alexia Toulmet - ${data.markdownRemark.frontmatter.title}`}
+        >
             <BlogPostContent data={data} />
         </Layout>
     )

@@ -1,8 +1,8 @@
-import { StaticImage, IImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import { useTheme, css, keyframes } from '@emotion/react'
 import { Layout, Card, CTASection } from '../components'
 import Hi from '../icons/hi'
-import { ITheme, hideDotsStyle, highlightTitleStyle } from '../style/theme'
+import { ITheme, highlightTitleStyle } from '../style/theme'
 
 function About() {
     const theme: ITheme = useTheme()
@@ -11,7 +11,7 @@ function About() {
         100% {transform: rotate(10deg);}
     `
     return (
-        <Layout>
+        <Layout layoutTitle={'Alexia Toulmet - About'}>
             <div
                 css={css`
                     display: flex;

@@ -7,6 +7,7 @@ ctaLink: 'yes'
 layout: 2
 order: 1
 type: 'teaching'
+content: 'Lorem ipsum blablabla'
 ---
 
 I created a React components library from scratch

@@ -1,4 +1,4 @@
-import { StaticImage, IImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import Marquee from 'react-fast-marquee'
 import { useTheme, css } from '@emotion/react'
 import { Layout, Card, CTASection, CTA } from '../components'
@@ -354,7 +354,7 @@ function HomeContent({ data }: BlogProps) {
 
 const IndexPage = (props: BlogProps) => {
     return (
-        <Layout>
+        <Layout layoutTitle={'Alexia Toulmet - Home'}>
             <HomeContent {...props} />
         </Layout>
     )

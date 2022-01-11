@@ -6,6 +6,7 @@ logo: './inco.png'
 layout: 3
 order: 2
 type: 'teaching'
+content: 'Lorem ipsum blablabla'
 ---
 
 I created a React components library from scratch

@@ -7,6 +7,7 @@ logo: './agorastore.png'
 layout: 1
 order: 3
 type: 'commercial'
+content: 'Lorem ipsum blablabla'
 ---
 
 I created a React components library from scratch
