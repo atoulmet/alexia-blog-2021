@@ -19,7 +19,9 @@ function LinkWrapper({
     CTAlink: string
 }) {
     return isExternalLink ? (
-        <a href={CTAlink}>{children}</a>
+        <a href={CTAlink} target="_blank">
+            {children}
+        </a>
     ) : (
         <Link to={CTAlink}>{children}</Link>
     )

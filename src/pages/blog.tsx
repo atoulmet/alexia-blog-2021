@@ -101,6 +101,7 @@ export const blogListQuery = graphql`
     query MyQuery {
         blog: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "//blog//" } }
+            sort: { fields: [frontmatter___date], order: DESC }
         ) {
             posts: nodes {
                 fields {

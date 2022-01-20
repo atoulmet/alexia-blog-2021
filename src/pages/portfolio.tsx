@@ -16,6 +16,7 @@ const technologiesIUse = [
     'Node',
     'Gatsby',
     'Storybook',
+    'Algolia',
     'Express',
     'Next',
     'Mongo',
@@ -545,35 +546,6 @@ function PortfolioContent({ data }: PortfolioProps) {
                     cssProps={css`
                         grid-column: 2/3;
                         padding: 30px;
-
-                        @media (max-width: 800px) {
-                            grid-column: unset;
-                            margin-bottom: 30px;
-                            margin: 0 30px;
-                        }
-                    `}
-                >
-                    <XingFuCat />
-                    <div
-                        css={css`
-                            margin-bottom: 20px;
-                            font-size: 20px;
-                        `}
-                    >
-                        I love CSS animations, and try it out on CodePen !
-                    </div>
-                    <CTA
-                        CTAlabel="Check my CodePen"
-                        CTAlink="https://codepen.io/atoulmet/pen/QWEVqev"
-                    />
-                </Card>
-                <Card
-                    cssProps={css`
-                        grid-column: 2/3;
-                        padding: 30px;
-                        /* background-color: #070c14; */
-
-                        margin-top: 64px;
                         @media (max-width: 800px) {
                             grid-column: unset;
                             margin-bottom: 30px;
@@ -605,6 +577,34 @@ function PortfolioContent({ data }: PortfolioProps) {
                         CTAlink="https://atoulmet-red-tetris.herokuapp.com/"
                     />
                 </Card>
+                <Card
+                    cssProps={css`
+                        grid-column: 1/3;
+                        padding: 30px;
+                        margin-top: 64px;
+                        @media (max-width: 800px) {
+                            margin-top: 0;
+                            grid-column: unset;
+                            margin-bottom: 30px;
+                            margin: 0 30px;
+                        }
+                    `}
+                >
+                    <XingFuCat />
+                    <div
+                        css={css`
+                            margin-bottom: 20px;
+                            font-size: 20px;
+                        `}
+                    >
+                        I love CSS animations ! Try to inspect my fortune cat to
+                        see how I love wasting my time 😂
+                    </div>
+                    <CTA
+                        CTAlabel="Check my CodePen"
+                        CTAlink="https://codepen.io/atoulmet/pen/QWEVqev"
+                    />
+                </Card>
             </div>
             <CTASection title="The technologies I use">
                 <AnimatedSkills />
@@ -625,7 +625,7 @@ export const portfolioQuery = graphql`
     query PortfolioQuery {
         portfolio: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "//portfolio//" } }
-            sort: { fields: [frontmatter___order], order: DESC }
+            sort: { fields: [frontmatter___order], order: ASC }
         ) {
             projects: nodes {
                 fields {
