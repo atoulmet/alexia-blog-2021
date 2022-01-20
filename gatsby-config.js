@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: "Alexia Toulmet's site",
-        description: `Hi 👋! I am a fullstack software engineer. When I'm not creating new React components, I am teaching code.`,
+        description: `Hi 👋! I am a software engineer. When I'm not creating new React components, I am teaching code.`,
         keywords: 'frontend, code, teaching, software',
         siteUrl: 'https://alexiatoulmet.com',
         author: 'Alexia Toulmet',

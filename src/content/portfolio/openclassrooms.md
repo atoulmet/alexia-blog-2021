@@ -1,8 +1,8 @@
 ---
 title: OpenClassrooms
 date: '2019-03-04'
-cover_image: './test.png'
-logo: './inco.png'
+cover_image: './oc-cours.png'
+logo: './OC.png'
 ctaLink: 'yes'
 layout: 2
 order: 1

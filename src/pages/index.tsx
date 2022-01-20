@@ -102,7 +102,7 @@ function HomeContent({ data }: BlogProps) {
                             my portfolio !
                         </span>
                     </p>
-                    <p css={css``}>I’m a fullstack software engineer.</p>
+                    <p css={css``}>I’m a software engineer.</p>
                     <p
                         css={css`
                             ${hideDotsStyle};
@@ -228,12 +228,13 @@ function HomeContent({ data }: BlogProps) {
                                 padding: 30px 0;
                             `}
                         >
-                            Teaching
+                            Coding
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua, Ut enim ad minim veniam
+                            For more than 4 years now, I've been developping
+                            websites. Even though I don't have any problem
+                            getting my hand dirty with any language, I love
+                            coding in React.
                         </p>
                     </Card>
                     <Card
@@ -259,12 +260,13 @@ function HomeContent({ data }: BlogProps) {
                                 padding: 30px 0;
                             `}
                         >
-                            Coding
+                            Teaching
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua, Ut enim ad minim veniam
+                            The main reason why I decided to become a freelancer
+                            was to have more time available for teaching. I love
+                            creating online courses, but also teach it face to
+                            face.
                         </p>
                     </Card>
                 </div>

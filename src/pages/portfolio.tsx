@@ -8,6 +8,8 @@ import { ITheme } from '../style/theme'
 import { PortfolioProps } from '../types/portfolio'
 // @ts-ignore
 import calculatorGif from '../images/calculator.gif'
+import redTetrisGif from '../images/redtetris.gif'
+import XingFuCat from '../components/XingFuCat'
 
 const technologiesIUse = [
     'React',
@@ -119,7 +121,7 @@ function PortfolioContent({ data }: PortfolioProps) {
                     }
                 `}
             >
-                Here are some things I did in the 4+ years since I’m coding in
+                Here are some things I did for the 4+ years since I’m coding in
                 web
             </p>
 
@@ -222,7 +224,12 @@ function PortfolioContent({ data }: PortfolioProps) {
                                 {cover && (
                                     <GatsbyImage
                                         image={cover}
-                                        objectPosition="center"
+                                        objectPosition={
+                                            frontmatter.title ===
+                                            'Components Library'
+                                                ? 'left'
+                                                : 'center'
+                                        }
                                         alt="blog-post-image"
                                         css={css`
                                             margin: 30px;
@@ -501,6 +508,7 @@ function PortfolioContent({ data }: PortfolioProps) {
                     cssProps={css`
                         grid-column: 1/2;
                         padding: 30px;
+
                         @media (max-width: 800px) {
                             grid-column: unset;
                             margin: 0 30px;
@@ -520,6 +528,14 @@ function PortfolioContent({ data }: PortfolioProps) {
                             margin-bottom: 30px;
                         `}
                     />
+                    <div
+                        css={css`
+                            margin-bottom: 20px;
+                            font-size: 20px;
+                        `}
+                    >
+                        A simple Calculator with vintage design I created 🤓
+                    </div>
                     <CTA
                         CTAlabel="Check it out online"
                         CTAlink="https://atoulmet.github.io/calculator/"
@@ -529,6 +545,35 @@ function PortfolioContent({ data }: PortfolioProps) {
                     cssProps={css`
                         grid-column: 2/3;
                         padding: 30px;
+
+                        @media (max-width: 800px) {
+                            grid-column: unset;
+                            margin-bottom: 30px;
+                            margin: 0 30px;
+                        }
+                    `}
+                >
+                    <XingFuCat />
+                    <div
+                        css={css`
+                            margin-bottom: 20px;
+                            font-size: 20px;
+                        `}
+                    >
+                        I love CSS animations, and try it out on CodePen !
+                    </div>
+                    <CTA
+                        CTAlabel="Check my CodePen"
+                        CTAlink="https://codepen.io/atoulmet/pen/QWEVqev"
+                    />
+                </Card>
+                <Card
+                    cssProps={css`
+                        grid-column: 2/3;
+                        padding: 30px;
+                        /* background-color: #070c14; */
+
+                        margin-top: 64px;
                         @media (max-width: 800px) {
                             grid-column: unset;
                             margin-bottom: 30px;
@@ -537,7 +582,7 @@ function PortfolioContent({ data }: PortfolioProps) {
                     `}
                 >
                     <img
-                        src={calculatorGif}
+                        src={redTetrisGif}
                         css={css`
                             object-fit: cover;
                             width: 100%;
@@ -545,9 +590,19 @@ function PortfolioContent({ data }: PortfolioProps) {
                             margin-bottom: 30px;
                         `}
                     />
+                    <div
+                        css={css`
+                            margin-bottom: 20px;
+                            font-size: 20px;
+                        `}
+                    >
+                        We had to code an online tetris at 42. No design was
+                        required, but it was the perfect opportunity to have fun
+                        with 80s design classics
+                    </div>
                     <CTA
-                        CTAlabel="Check it out online"
-                        CTAlink="https://atoulmet.github.io/calculator/"
+                        CTAlabel="Give it a try"
+                        CTAlink="https://atoulmet-red-tetris.herokuapp.com/"
                     />
                 </Card>
             </div>

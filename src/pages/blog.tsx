@@ -50,17 +50,26 @@ function BlogContent({ data }: BlogProps) {
                 </h2>
                 <p
                     css={css`
-                        font-weight: 600;
+                        font-weight: 400;
+                        font-size: 25px;
+
+                        @media (max-width: 600px) {
+                            font-size: 20px;
+                        }
                     `}
                 >
                     Writing takes time.
                 </p>
                 <p
                     css={css`
-                        font-weight: 600;
+                        font-weight: 400;
+                        font-size: 25px;
                         margin-bottom: 30px;
                         @media (max-width: 800px) {
                             text-align: center;
+                        }
+                        @media (max-width: 600px) {
+                            font-size: 20px;
                         }
                     `}
                 >

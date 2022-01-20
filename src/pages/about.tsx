@@ -94,8 +94,8 @@ function About() {
                             text-align: center;
                         `}
                     >
-                        I’m Alexia Toulmet, and I work as a fullstack software
-                        engineer. But let’s get into more details.
+                        I’m Alexia Toulmet, and I work as a software engineer.
+                        But let’s get into more details.
                     </p>
                 </div>
 

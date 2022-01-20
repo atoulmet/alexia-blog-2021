@@ -90,8 +90,8 @@ export default function Header() {
                     }
                 `}
             >
-                <Navigation to="/" label="Accueil" />
-                <Navigation to="/about" label="À propos" />
+                <Navigation to="/" label="Home" />
+                <Navigation to="/about" label="About" />
 
                 <Navigation to="/blog" label="Blog" />
                 <Navigation to="/portfolio" label="Portfolio" />
