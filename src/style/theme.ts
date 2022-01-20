@@ -54,6 +54,11 @@ export const highlightTitleStyle = css`
 `
 
 export const globalStyle = css`
+    * {
+        ::selection {
+            background-color: rgba(182, 232, 231, 50%);
+        }
+    }
     body {
         background-color: white;
         background-image: radial-gradient(#000 5%, transparent 2%),
