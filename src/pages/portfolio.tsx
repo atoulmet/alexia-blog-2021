@@ -583,10 +583,10 @@ function PortfolioContent({ data }: PortfolioProps) {
                         padding: 30px;
                         margin-top: 64px;
                         @media (max-width: 800px) {
-                            margin-top: 0;
                             grid-column: unset;
                             margin-bottom: 30px;
                             margin: 0 30px;
+                            margin-top: 32px;
                         }
                     `}
                 >

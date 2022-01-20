@@ -126,7 +126,7 @@ function HomeContent({ data }: BlogProps) {
                     `}
                 >
                     <StaticImage
-                        src="../images/profile-pic.jpg"
+                        src="../images/profile-pic.png"
                         alt="Alexia Toulmet profile picture"
                         height={300}
                         width={300}

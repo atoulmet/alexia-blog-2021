@@ -52,6 +52,9 @@ export default function XingFuCat() {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    @media (max-width: 800px) {
+                        width: 200px;
+                    }
                 `}
             >
                 <div
