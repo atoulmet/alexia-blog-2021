@@ -10,6 +10,7 @@ import { PortfolioProps } from '../types/portfolio'
 import calculatorGif from '../images/calculator.gif'
 import redTetrisGif from '../images/redtetris.gif'
 import XingFuCat from '../components/XingFuCat'
+import { stylePortfolio } from '../style/style-portfolio'
 
 const technologiesIUse = [
     'React',
@@ -137,7 +138,7 @@ function PortfolioContent({ data }: PortfolioProps) {
             >
                 Commercial coding
             </h2>
-            {commercialProjects.map(({ id, frontmatter }) => {
+            {commercialProjects.map(({ id, frontmatter, html }) => {
                 const logo = getImage(frontmatter.logo.childImageSharp)
                 const cover = getImage(frontmatter.cover_image.childImageSharp)
 
@@ -197,7 +198,12 @@ function PortfolioContent({ data }: PortfolioProps) {
                                         }
                                     `}
                                 >
-                                    {frontmatter.content}
+                                    <div
+                                        dangerouslySetInnerHTML={{
+                                            __html: html,
+                                        }}
+                                        css={stylePortfolio}
+                                    />
                                 </div>
                                 {logo && (
                                     <GatsbyImage
@@ -416,7 +422,12 @@ function PortfolioContent({ data }: PortfolioProps) {
                                             text-align: left;
                                         `}
                                     >
-                                        {project.frontmatter.content}
+                                        <div
+                                            dangerouslySetInnerHTML={{
+                                                __html: project.html,
+                                            }}
+                                            css={stylePortfolio}
+                                        />
                                     </div>
                                     {logoImg && (
                                         <GatsbyImage
@@ -631,6 +642,7 @@ export const portfolioQuery = graphql`
                 fields {
                     slug
                 }
+                html
                 frontmatter {
                     date
                     title

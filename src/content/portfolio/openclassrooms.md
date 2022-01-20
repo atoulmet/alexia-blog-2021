@@ -7,7 +7,13 @@ ctaLink: 'https://openclassrooms.com/fr/courses/7008001-debutez-avec-react'
 layout: 2
 order: 3
 type: 'teaching'
-content: 'I have been creating courses and projects for OpenClassrooms for almost 3 years now. I started with existing courses that needed adaptation, and then later, started creating my own courses. Here are the last 3 : "Débutez avec React", "Créez une application React complète" and "Créez une maquette pour le développement web".'
+content: ''
 ---
 
-I created a React components library from scratch
+I have been **creating courses and projects for OpenClassrooms** for almost 3 years now. I started with existing courses that needed adaptation, and then later, started creating my own courses.
+
+Here are the last 3 :
+
+-   [Débutez avec React](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react)
+-   [Créez une application React complète](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete)
+-   [Créez une maquette pour le développement web](https://openclassrooms.com/fr/courses/7342806-creez-une-maquette-pour-le-developpement-web)

@@ -6,7 +6,7 @@ logo: './emlyon.png'
 layout: 4
 order: 2
 type: 'teaching'
-content: 'I had the opportunity to tutor a small group of EMLyon students during a trimester. This group was working on a class called "Processing with AI".'
+content: ''
 ---
 
-I
+I had the opportunity to tutor a small group of **EMLyon students** during a trimester. This group was working on a class called "Processing with AI".

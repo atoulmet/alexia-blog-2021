@@ -10,4 +10,4 @@ type: 'commercial'
 content: "Starting from product mockups, I first helped Agorastore's team create their own Design System. Once defined, I coded the Components Library in a dedicated Storybook."
 ---
 
-I created a React components library from scratch
+Starting from **product mockups**, I first helped Agorastore's team create their own **Design System**. Once defined, I coded the Components Library in **a dedicated Storybook**.

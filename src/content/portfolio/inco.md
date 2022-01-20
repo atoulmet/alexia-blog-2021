@@ -8,7 +8,7 @@ ctaLink: 'https://powherintech.inco-group.co/'
 layout: 2
 order: 1
 type: 'commercial'
-content: 'When INCO first got in touch with me, they had a full report about how to help tech companies become more inclusive. The goal was to create a more interactive experience from it. Working with a great UI designer, that is how we came up with this final website. Check it out down there 👇'
+content: ''
 ---
 
-I created a React components library from scratch
+When INCO first got in touch with me, they had a **full PDF report** about how to help tech **companies become more inclusive**. The goal was to create a more interactive experience from it. Working with a great UI designer, that is how we came up with this **final website**. Check it out down there 👇

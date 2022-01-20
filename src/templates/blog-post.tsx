@@ -94,10 +94,14 @@ function BlogPostContent({ data }: BlogPostProps) {
                         flex-direction: column;
                         align-items: center;
                         padding-bottom: 60px;
-                        font-size: 21px;
+                        font-size: 20px;
                         font-weight: 400;
                         max-width: 750px;
                         line-height: 1.58;
+
+                        & strong {
+                            font-weight: 600;
+                        }
                         .gatsby-resp-image-figure {
                             width: 100%;
                             & figcaption {

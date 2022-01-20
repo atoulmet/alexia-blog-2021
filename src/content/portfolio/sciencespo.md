@@ -6,7 +6,7 @@ logo: './sciencespo.png'
 layout: 3
 order: 1
 type: 'teaching'
-content: 'For two semesters now, I have been teaching my own coding class at Sciences Po Paris for masters students. I created a JavaScript curriculum aimed to understand the basis of programming: variables, loops, functions, conditions. Later during the semester, students learn web development - HTML, CSS and frontend JS.'
+content: ''
 ---
 
-I created a React components library from scratch
+For two semesters now, I have been teaching my **own coding class at Sciences Po Paris** for masters students. I created a JavaScript curriculum aimed to understand the basis of programming: variables, loops, functions, conditions. Later during the semester, students learn web development - HTML, CSS and frontend JS.
