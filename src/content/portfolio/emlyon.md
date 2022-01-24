@@ -9,4 +9,4 @@ type: 'teaching'
 content: ''
 ---
 
-I had the opportunity to tutor a small group of **EMLyon students** during a trimester. This group was working on a class called "Processing with AI".
+I tutored a small group of **EMLyon students** during a trimester. This group was working on a class called "Processing with AI".

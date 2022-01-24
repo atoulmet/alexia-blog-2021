@@ -219,10 +219,12 @@ function HomeContent({ data }: BlogProps) {
                             &h3 {
                                 text-decoration: underline;
                             }
+                            & strong {
+                                font-weight: 600;
+                            }
                         `}
                     >
-                        <Robot />
-
+                        <Terminal />
                         <h3
                             css={css`
                                 padding: 30px 0;
@@ -231,10 +233,11 @@ function HomeContent({ data }: BlogProps) {
                             Coding
                         </h3>
                         <p>
-                            For more than 4 years now, I've been developping
-                            websites. Even though I don't have any problem
-                            getting my hand dirty with any language, I love
-                            coding in React.
+                            For more than 4 years now, I've been{' '}
+                            <strong>developping websites</strong>. Even though I
+                            don't have any problem getting my hand dirty with
+                            any language, I love{' '}
+                            <strong>coding in React</strong>.
                         </p>
                     </Card>
                     <Card
@@ -252,9 +255,12 @@ function HomeContent({ data }: BlogProps) {
                             &h3 {
                                 text-decoration: underline;
                             }
+                            & strong {
+                                font-weight: 600;
+                            }
                         `}
                     >
-                        <Terminal />
+                        <Robot />
                         <h3
                             css={css`
                                 padding: 30px 0;
@@ -264,9 +270,10 @@ function HomeContent({ data }: BlogProps) {
                         </h3>
                         <p>
                             The main reason why I decided to become a freelancer
-                            was to have more time available for teaching. I love
-                            creating online courses, but also teach it face to
-                            face.
+                            was to have more time{' '}
+                            <strong>available for teaching</strong>. I love
+                            creating <strong>online courses</strong>, but also{' '}
+                            <strong>teach it face to face</strong>.
                         </p>
                     </Card>
                 </div>

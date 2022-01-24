@@ -145,6 +145,7 @@ function About() {
                     <p>
                         Because it is the best way to split my time between
                         <strong>
+                            {' '}
                             coding, teaching and my other side projects
                         </strong>
                         . I love taking part in coding projects, be part of
