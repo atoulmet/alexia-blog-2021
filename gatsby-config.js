@@ -25,22 +25,7 @@ module.exports = {
         'gatsby-transformer-sharp',
         `gatsby-transformer-remark`,
         `gatsby-plugin-sharp`,
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: [
-                    {
-                        resolve: `gatsby-remark-images`,
-                        options: {
-                            maxWidth: 600,
-                            withWebp: true,
-                            showCaptions: true,
-                            quality: 100,
-                        },
-                    },
-                ],
-            },
-        },
+
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -86,6 +71,22 @@ module.exports = {
             options: {
                 name: `portfolio`,
                 path: `${__dirname}/src/content/portfolio`,
+            },
+        },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 600,
+                            withWebp: true,
+                            showCaptions: true,
+                            quality: 100,
+                        },
+                    },
+                ],
             },
         },
     ],

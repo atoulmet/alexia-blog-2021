@@ -2,7 +2,7 @@
 title: Comment faire une recherche efficace sur Google dans le Dev
 date: '2022-01-24'
 duration: '☕️ 3 min read'
-cover_image: './post-header.jpg'
+cover_image: './post-header.png'
 ---
 
 Dès que j'ai commencé à étudier à 42, j'ai découvert qu'il existe de nombreuses blagues sur le métier de développeur. L'une d'entre elles consiste à dire que la seule compétence requise pour coder est d'apprendre... à faire des recherches Google.
@@ -34,7 +34,7 @@ Le choix des mots est important. Pour formuler une recherche Google qui fonction
 
 ### Ne mettez que les mots importants
 
-Par exemple, si vous cherchez quel langage utiliser por coder un site internet, au lieu de taper "what language should I use to code a website", vous pouvez tout simplement écrire "choose coding language website".
+Par exemple, si vous cherchez quel langage utiliser pour coder un site internet, au lieu de taper "what language should I use to code a website", vous pouvez tout simplement écrire "choose coding language website".
 
 ### Ajoutez progressivement des termes
 
@@ -55,3 +55,5 @@ Si les résultats de votre recherche ne sont pas satisfaisants (ça arrive assez
 ## 5- Exploitez le formulaire de recherche avancée
 
 Et enfin, il vous est toujours possible d'affiner encore davantage votre recherche en utilisant le formulaire de recherche avancé. D'ailleurs, si vous voulez un meilleur aperçu des différentes fonctionnalités qu'il offre, je vous conseille... de chercher des articles sur Google. 😁
+
+![La recherche avancée](./recherche-avancee.png)
