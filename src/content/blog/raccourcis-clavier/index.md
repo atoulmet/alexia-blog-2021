@@ -1,5 +1,5 @@
 ---
-title: Comment faire une recherche efficace sur Google dans le Dev
+title: Quelques raccourcis clavier pour débuter
 date: '2022-01-24'
 duration: '☕️ 3 min read'
 cover_image: './post-header.jpg'
