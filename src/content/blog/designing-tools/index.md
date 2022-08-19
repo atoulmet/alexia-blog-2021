@@ -59,7 +59,7 @@ The two resources I use most often are [Flaticon](https://www.flaticon.com/) and
 
 ![Figma](./figma.png)
 
-My post would be nothing without the tool I use all the time now. Let me introduce [Figma](https://www.figma.com/files). I talked about it in the post about [how I created my own website](https://alexiatoulmet.com/blog/the-come-back-of-personal-blogging/). Figma is quite an amazing tool: you can create designs online, edit it collaboratively, and entirely for free !
+My post would be nothing without the tool I use all the time now. Let me introduce [Figma](https://www.figma.com/files). I talked about it in the post about [how I created my own website](https://www.alexiatoulmet.com/blog/the-come-back-of-personal-blogging/). Figma is quite an amazing tool: you can create designs online, edit it collaboratively, and entirely for free !
 The way it works is quite similar to Sketch (which is also pretty awesome, but is not free).
 
 ### Googled tools
