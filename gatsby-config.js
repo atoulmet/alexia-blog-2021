@@ -3,11 +3,11 @@ module.exports = {
         title: "Alexia Toulmet's site",
         description: `Hi 👋! I am a software engineer. When I'm not creating new React components, I am teaching code.`,
         keywords: 'frontend, code, teaching, software',
-        siteUrl: 'https://alexiatoulmet.com',
+        siteUrl: 'https://www.alexiatoulmet.com',
         author: 'Alexia Toulmet',
         authorDetails: {
             name: 'Alexia Toulmet',
-            url: 'https://alexiatoulmet.com',
+            url: 'https://www.alexiatoulmet.com',
             email: 'alexia.toulmet@gmail.com',
         },
         social: {
