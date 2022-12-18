@@ -269,11 +269,9 @@ function HomeContent({ data }: BlogProps) {
                             Teaching
                         </h3>
                         <p>
-                            The main reason why I decided to become a freelancer
-                            was to have more time{' '}
-                            <strong>available for teaching</strong>. I love
+                            I love
                             creating <strong>online courses</strong>, but also{' '}
-                            <strong>teach it face to face</strong>.
+                            <strong>teach it face to face</strong>, especially at Sciences Po.
                         </p>
                     </Card>
                 </div>
@@ -378,6 +376,7 @@ export const blogListQuery = graphql`
     query {
         blog: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "//blog//" } }
+            sort: { fields: [frontmatter___date], order: DESC }
         ) {
             posts: nodes {
                 fields {

@@ -129,7 +129,7 @@ function About() {
                     </p>
                 </Card>
 
-                <Card
+                {/* <Card
                     cssProps={css`
                         text-align: left;
                         align-items: flex-start;
@@ -153,7 +153,7 @@ function About() {
                         also really important to{' '}
                         <strong>share what I learn</strong> through teaching.{' '}
                     </p>
-                </Card>
+                </Card> */}
 
                 <Card
                     cssProps={css`
