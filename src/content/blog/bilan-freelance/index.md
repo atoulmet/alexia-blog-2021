@@ -81,7 +81,6 @@ Alors voilà mes 10 principales leçons sur le freelances 👇
 ## Passer à l’étape suivante
 
 Voilà donc mes apprentissages les plus importants sur le freelance. Encore une fois, je suis extrêmement reconnaissante de l’expérience que j’ai acquise sur ces presque 4 ans, surtout auprès des personnes qui m’ont fait confiance, et de celles qui m’ont accompagnées. Pourtant aujourd’hui, quelques frustrations par rapport à ma situation de freelance demeurent :
-
 - Le freelance reste avant tout une aventure solitaire. Même lorsque je me sens prête à véritablement m’engager dans une équipe, à partager mon enthousiasme et à rencontrer de nouvelles personnes que je trouve inspirantes, il existe toujours une sorte de distance infranchissable en freelance.
 
 - Si le freelance permet de progresser rapidement techniquement, je me suis sentie confrontée à un plafond technique durant ma dernière année : on ne manage pas d’équipe, les projets sont souvent plus petits, moins structurés, moins testés.
