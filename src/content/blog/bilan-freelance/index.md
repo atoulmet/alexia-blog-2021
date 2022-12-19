@@ -27,10 +27,10 @@ Au bout de quelques semaines, un ami qui venait de lever des fonds en seed pour 
 Comme je le disais plus tôt, je n’avais pas le droit au chômage, le choix de statut juridique paraissait donc assez évident : le plus simple était de **m’installer en auto-entreprise**. J’avais déjà un compte bancaire à part qui ne servait à rien (sans aucun moyen de paiement associé), mais c’était tout ce dont j’avais besoin. Je faisais donc la déclaration par moi-même, en googlant à chaque question pour m’assurer que je ne faisais pas d’erreur.
 
 Ce statut m’a d’ailleurs suffi les quasi 4 ans qu’ont duré mon activité de freelance, et il était assez simple à gérer :
-- je réalisais de simples **devis / factures** sur un logiciel classique
-- je tenais mon **carnet comptable** sur un Google Spreadsheet
-- et j’avais mon **compte bancaire** dédié depuis lequel je me faisais des virements sur mon compte personnel
-- je déclarais mon **chiffre d’affaire** trimestriel afin de payer mes charges
+- je réalisais de simples devis / factures sur un logiciel classique
+- je tenais mon carnet comptable sur un Google Spreadsheet
+- et j’avais mon compte bancaire dédié depuis lequel je me faisais des virements sur mon compte personnel
+- je déclarais mon chiffre d’affaire trimestriel afin de payer mes charges
 
 Le plus compliqué a été lorsque j’ai dépassé le seuil d’exonération en TVA au-delà duquel j’ai dû la facturer et la reverser. J’étais complètement perdue. Mais encore une fois, j’ai eu beaucoup de chance. J’ai tout simplement décidé de **me rendre dans mon centre d’impôts** (qui se trouvait à 10 minutes à pied de chez moi). Je leur ai dit que je ne comprenais pas comment faire, quel formulaire remplir. Ils ont pris le temps de m’expliquer et m’ont aidé à renseigner toutes mes informations. 
 
@@ -72,20 +72,20 @@ L’enseignement a également été l’occasion pour moi de me **replonger dans
 Alors voilà mes 10 principales leçons sur le freelances 👇
 
 ## Mes règles du freelance
-- **Savoir dire non**, le plus tôt possible, dès que la situation l’exige ou que l’on ne se sent pas à l’aise
-- Ne jamais laisser une situation s’enliser : dès qu’il y a une frustration d’un côté ou de l’autre, il faut **crever l’abcès**
-- **Fixer ses limites** : ce n’est pas parce qu’on est freelance qu’il faut impérativement travailler le weekend ou passé 19h. Cela peut arriver, mais c’est VOTRE choix, et le client n’a pas le droit de l’exiger
-- **Éviter de travailler sur des contrats facturés au nombre de jours estimés** (sauf très rare exception)
-- **Ne pas se sous-vendre** : lorsqu’on travaille en freelance, on peut facilement se dire qu’on peut vivre avec peu. Après tout, quand on est junior, 400 euros par jour, ça paraît énorme : 8000 euros par mois ! Pourtant, vous ne mettrez jamais 8000 par mois dans votre poche. Pas besoin de vous refaire le chiffrage, mais vous aurez besoin de payer des charges, votre mutuelle, vos assurances, vos congés, vos éventuels arrêts maladie. Alors, même si je sais que c’est souvent dur de fixer un TJM, ne sous-estimez jamais tous ces frais.
+- Savoir dire non, le plus tôt possible, dès que la situation l’exige ou que l’on ne se sent pas à l’aise
+- Ne jamais laisser une situation s’enliser : dès qu’il y a une frustration d’un côté ou de l’autre, il faut crever l’abcès
+- Fixer ses limites : ce n’est pas parce qu’on est freelance qu’il faut impérativement travailler le weekend ou passé 19h. Cela peut arriver, mais c’est VOTRE choix, et le client n’a pas le droit de l’exiger
+- Éviter de travailler sur des contrats facturés au nombre de jours estimés (sauf très rare exception)
+- Ne pas se sous-vendre : lorsqu’on travaille en freelance, on peut facilement se dire qu’on peut vivre avec peu. Après tout, quand on est junior, 400 euros par jour, ça paraît énorme : 8000 euros par mois ! Pourtant, vous ne mettrez jamais 8000 par mois dans votre poche. Pas besoin de vous refaire le chiffrage, mais vous aurez besoin de payer des charges, votre mutuelle, vos assurances, vos congés, vos éventuels arrêts maladie. Alors, même si je sais que c’est souvent dur de fixer un TJM, ne sous-estimez jamais tous ces frais.
 
 ## Passer à l’étape suivante
 
 Voilà donc mes apprentissages les plus importants sur le freelance. Encore une fois, je suis extrêmement reconnaissante de l’expérience que j’ai acquise sur ces presque 4 ans, surtout auprès des personnes qui m’ont fait confiance, et de celles qui m’ont accompagnées. Pourtant aujourd’hui, quelques frustrations par rapport à ma situation de freelance demeurent :
 
-- Le freelance reste avant tout une **aventure solitaire**. Même lorsque je me sens prête à véritablement m’engager dans une équipe, à partager mon enthousiasme et à rencontrer de nouvelles personnes que je trouve inspirantes, il existe toujours une sorte de distance infranchissable en freelance.
+- Le freelance reste avant tout une aventure solitaire. Même lorsque je me sens prête à véritablement m’engager dans une équipe, à partager mon enthousiasme et à rencontrer de nouvelles personnes que je trouve inspirantes, il existe toujours une sorte de distance infranchissable en freelance.
 
-- Si le freelance permet de progresser rapidement techniquement, je me suis sentie **confrontée à un plafond technique** durant ma dernière année : on ne manage pas d’équipe, les projets sont souvent plus petits, moins structurés, moins testés.
+- Si le freelance permet de progresser rapidement techniquement, je me suis sentie confrontée à un plafond technique durant ma dernière année : on ne manage pas d’équipe, les projets sont souvent plus petits, moins structurés, moins testés.
 
-- La **séparation entre vie personnelle et vie professionnelle** est assez dure à maintenir. Je trouve cela tellement dur d’anticiper des congés, de devoir prévenir tous ses clients, et de s’autoriser de prendre du temps libre. Cela a un prix.
+- La séparation entre vie personnelle et vie professionnelle est assez dure à maintenir. Je trouve cela tellement dur d’anticiper des congés, de devoir prévenir tous ses clients, et de s’autoriser de prendre du temps libre. Cela a un prix.
 
-Pour toutes ces raisons, je sens que ma route me conduit ailleurs aujourd’hui. Voilà pourquoi, l'été dernier, j’ai décidé d’accepter un CDI dans la **super entreprise MeiliSearch**, afin d’être développeuse au sein de leur équipe Cloud. Je pourrai malgré tout continuer d’enseigner le code, notamment à Sciences Po. Même si ces quasi 4 ans de freelance ont été une superbe aventure, je suis extrêmement heureuse de rejoindre Meili. 🎉
+Pour toutes ces raisons, je sens que ma route me conduit ailleurs aujourd’hui. Voilà pourquoi, l'été dernier, j’ai décidé d’accepter un CDI dans la super entreprise MeiliSearch, afin d’être développeuse au sein de leur équipe Cloud. Je pourrai malgré tout continuer d’enseigner le code, notamment à Sciences Po. Même si ces quasi 4 ans de freelance ont été une superbe aventure, je suis extrêmement heureuse de rejoindre Meili. 🎉
