@@ -1,7 +1,7 @@
 ---
 title: "Freelance, 4 ans après : pourquoi j'ai adoré, pourquoi j'arrête"
 date: '2022-12-19'
-duration: '☕️ 12 min read'
+duration: '☕️ 20 min read'
 cover_image: './header.png'
 ---
 Début 2019, je décidais de quitter mon premier CDI en tant que développeuse. Je n’étais pas éligible au chômage, et j’avais, au final, assez peu d’argent de côté (de quoi tenir 2-3 mois). Mais cela faisait un petit moment déjà que je n’arrivais pas à trouver ma place, la motivation et l’inspiration pour continuer dans l’entreprise où j’étais. J’ai alors pris mon courage à deux mains pour démissionner afin de me lancer dans la **grande aventure du freelance**.
@@ -72,7 +72,7 @@ L’enseignement a également été l’occasion pour moi de me **replonger dans
 Alors voilà mes 10 principales leçons sur le freelances 👇
 
 ## Mes règles du freelance
-- Savoir dire non, le plus tôt possible, dès que la situation l’exige ou que l’on ne se sent pas à l’aise
+- *Savoir dire non*, le plus tôt possible, dès que la situation l’exige ou que l’on ne se sent pas à l’aise
 - Ne jamais laisser une situation s’enliser : dès qu’il y a une frustration d’un côté ou de l’autre, il faut crever l’abcès
 - Fixer ses limites : ce n’est pas parce qu’on est freelance qu’il faut impérativement travailler le weekend ou passé 19h. Cela peut arriver, mais c’est VOTRE choix, et le client n’a pas le droit de l’exiger
 - Éviter de travailler sur des contrats facturés au nombre de jours estimés (sauf très rare exception)
