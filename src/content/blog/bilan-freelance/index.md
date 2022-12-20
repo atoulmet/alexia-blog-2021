@@ -2,7 +2,7 @@
 title: "Freelance, 4 ans après : pourquoi j'ai adoré, pourquoi j'arrête"
 date: '2022-12-19'
 duration: '☕️ 20 min read'
-cover_image: './header.jpg'
+cover_image: './cover.png'
 ---
 Début 2019, je décidais de quitter mon premier CDI en tant que développeuse. Je n’étais pas éligible au chômage, et j’avais, au final, assez peu d’argent de côté (de quoi tenir 2-3 mois). Mais cela faisait un petit moment déjà que je n’arrivais pas à trouver ma place, la motivation et l’inspiration pour continuer dans l’entreprise où j’étais. J’ai alors pris mon courage à deux mains pour démissionner afin de me lancer dans la **grande aventure du freelance**.
 
